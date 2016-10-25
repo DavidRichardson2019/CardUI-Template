@@ -59,7 +59,7 @@ h3 {
     padding-top: 20px;
 }
 .cards {
-    
+    position: relative;
     margin-left: 40px;
     margin-right: 40px;
     background-color: black;
