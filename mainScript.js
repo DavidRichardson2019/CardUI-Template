@@ -93,18 +93,18 @@ $(document).ready(function(){
     })
     function transition(to, from, direction){
         if(direction == "next"){
-            $(from).animate({left: '200%'}, function(){
+            $(from).animate({left: '-200%'}, function(){
                 $(from).hide()
-                $(to).css({left: '-200%'})
+                $(to).css({left: '200%'})
                 $(to).show()
                 $(to).animate({left: '0%'})
                   
             })
             
         }else if(direction == "back"){
-            $(from).animate({left: '-200%'}, function(){
+            $(from).animate({left: '200%'}, function(){
                 $(from).hide()
-                $(to).css({left: '200%'})
+                $(to).css({left: '-200%'})
                 $(to).show()
                 $(to).animate({left: '0%'})
             })
