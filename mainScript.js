@@ -1,6 +1,15 @@
 
 $(document).ready(function(){
     var currentSlide = 1
+    var windowHeight = $(window).height()
+    var headerHeight = $("#header").height()
+    var footerHeight = $("#footer").height()
+    var minHeight = windowHeight - headerHeight - footerHeight
+    for (i = 1; i < 4; i++){
+        if ($("#card" + i).height < minHeight){
+            $("#card" + i).css({height: minHeight + "px"})
+        }
+    }
     $("#footerBack").click(function(){
         switch (currentSlide){
             case 1:
