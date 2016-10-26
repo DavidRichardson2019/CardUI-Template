@@ -4,10 +4,10 @@ $(document).ready(function(){
     var windowHeight = $(window).height()
     var headerHeight = $("#header").height()
     var footerHeight = $("#footer").height()
-    var minHeight = windowHeight - headerHeight - footerHeight
+    var minHeight = windowHeight - headerHeight - footerHeight - 40
     for (i = 1; i < 4; i++){
-        if ($("#card" + i).height < minHeight){
-            $("#card" + i).css({height: minHeight + "px"})
+        if ($("#card" + i).height() < minHeight){
+            $("#card" + i).css({height: minHeight})
         }
     }
     $("#footerBack").click(function(){
