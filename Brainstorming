@@ -1,0 +1,8 @@
+currentslide = 1
+totalslide = 27
+
+$(.next).onCLick{
+    if currentslide > 10 {
+        transition("#card" + "0" + currentslide)
+    }
+}
